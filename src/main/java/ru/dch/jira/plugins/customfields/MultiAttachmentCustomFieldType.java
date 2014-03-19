@@ -27,11 +27,17 @@ public class MultiAttachmentCustomFieldType extends CalculatedCFType
         Map<String, Object> params = super.getVelocityParameters(issue,field, fieldLayoutItem);
         params.put("attachments", getValueFromIssue(field, issue));
         return params;
+
     }
+
+
 
     public Object getValueFromIssue(CustomField customField, Issue issue)
     {
         List attachments = attachmentManager.getAttachments(issue);
+
+//        Map<String, Object> params = super.getVelocityParameters(issue,customField, fieldLayoutItem);
+//        params.put("attachments", getValueFromIssue(customField, issue));
         return attachments;
     }
 

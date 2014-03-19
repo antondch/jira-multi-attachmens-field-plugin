@@ -22,9 +22,9 @@
     </web-resource>
     
     <!-- publish our component -->
-    <customfield-type key="MultiAttachmentCustomFieldType" name="DateTime without forward out field" class="ru.dch.jira.plugins.customfields.MultiAttachmentCustomFieldType">
+    <customfield-type key="MultiAttachmentCustomFieldType" name="Multi Attachment View Field" class="ru.dch.jira.plugins.customfields.MultiAttachmentCustomFieldType">
         <description>view filtered attachments</description>
-        <resource type="velocity" name="view" location="templates/datetime-field-view.vm"/>
+        <resource type="velocity" name="view" location="templates/attachment-view.vm"/>
         <!--<resource type="velocity" name="xml" location="templates/datetime-field-xml.vm"/>-->
     </customfield-type>
     <!-- import from the product container -->

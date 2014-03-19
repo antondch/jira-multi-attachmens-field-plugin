@@ -1,4 +1,7 @@
 #disable_html_escaping()
 #foreach($attach in $attachments)
-    <a href="${attach}"/>
+##    <b>"[^${attach.filename}]" </b>
+    <a href="${baseurl}/secure/attachment/${attach.id}/${attach.filename}">$attach.filename</a>
+    <div/>
+##    <a href=$attach.filename>https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all</a>
 #end
